@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-int m,n,i,flag;
+int a,b,i,flag;
 
     printf("Enter the range:");
     scanf("%d%d",&a,&b);
