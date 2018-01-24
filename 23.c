@@ -2,14 +2,14 @@
 
 int main()
 {
-int i,n,min,a[10];
-scanf("%d",&n);
-for(i=0;i<n;i++)
+int i,r,min,a[10];
+scanf("%d",&r);
+for(i=0;i<r;i++)
 {
 	scanf("%d",&a[i]);
 }
 min=a[0];
-for(i=0;i<n;i++)
+for(i=0;i<r;i++)
 
 if(min>a[i])
 min=a[i];
