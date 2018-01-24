@@ -1,11 +1,19 @@
-#include<stdio.h>
+#include <stdio.h>
+
 int main()
 {
-int n=3,a=1,d=1,sum=0,i,y=0;
-for(i=a;i<=n;i=i+d)
+int n,k,di,sum=0,temp,i;
+scanf("%d%d%d",&n,&k,&di);
+for(i=0;i<n;i++)
 {
-sum=sum+i;
-} 
-printf("the result is %d\n",sum);
-return 0;
+	temp=sum+k;
+	sum=temp;
+	k=k+di;
+}
+	
+	printf("%d",temp);
+	
+
+	
+	return 0;
 }
