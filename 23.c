@@ -2,19 +2,19 @@
 
 int main()
 {
-int i,r,max,a[10];
-scanf("%d",&r);
-for(i=0;i<r;i++)
+int i,n,min,a[10];
+scanf("%d",&n);
+for(i=0;i<n;i++)
 {
 	scanf("%d",&a[i]);
 }
-max=a[0];
-for(i=0;i<r;i++)
+min=a[0];
+for(i=0;i<n;i++)
 
-if(max<a[i])
-max=a[i];
+if(min>a[i])
+min=a[i];
 {
- printf("%d",max);
+ printf("%d",min);
 }
 return 0;
 }
