@@ -1,18 +1,17 @@
-#include<stdio.h>
-int main()
+#include <stdio.h>
+#include <string.h>
+ 
+void main()
 {
-	int i,c=0;
-	char a[100];
-	for(i=0;i<=50;i++)
-	{
-		scanf("%c",&a[i]);
-	}
-	for(i=0;i<=a[i];i++)
-	{
-		if((a[i]>='a'&&a[i]<='z')||(a[i]>='A'&&a[i]<='Z'))
-		{
-		c++;
-	}}
-	printf("%d",c);
-	return 0;
+    char a[100];
+    int count = 0, i;
+ 
+    printf("enter the string\n");
+    scanf("%[^\n]s",&a);
+    for (i = 0;a[i] != '\0';i++)
+    {
+        if (a[i] == ' ')
+            count++;    
+    }
+    printf("%d\n", count + 1);
 }
