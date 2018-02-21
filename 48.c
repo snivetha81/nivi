@@ -1,9 +1,16 @@
 #include<stdio.h>
 main()
 {
-	int a,b,c,d,e,f,g;
-	scanf("%d%d%d%d%d",&a,&b,&c,&d,&e);
-	f=a+b+c+d+e;
-	g=(a+b+c+d+e)/5;
-	printf("%d",g);
+	int n,i,a[100],k,sum=0;
+	scanf("%d",&n);
+	for(i=0;i<=n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<=n;i++)
+	{
+               sum=sum+a[i];
+	}
+	k=sum/n;
+	printf("%d",k);
 }
